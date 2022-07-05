@@ -10,15 +10,12 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'alibaba',
   projectName: 'ali-react-table',
+  trailingSlash: false,
 
   themeConfig: {
     navbar: {
       hideOnScroll: true,
       title: 'ali-react-table',
-      logo: {
-        alt: 'ali-react-table Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           to: 'docs',
@@ -28,7 +25,7 @@ module.exports = {
         },
         { to: 'examples', label: '示例', position: 'left' },
         { to: 'blog', label: '博客', position: 'left' },
-        { href: 'https://ali-react-table.js.org/v1/', label: '1.x 文档', position: 'left' },
+        { href: 'https://shinima.github.io/ali-react-table-v1-doc/', label: '1.x 文档', position: 'left' },
         {
           href: 'https://github.com/alibaba/ali-react-table',
           label: 'GitHub',
@@ -84,10 +81,7 @@ module.exports = {
           editUrl: 'https://github.com/alibaba/ali-react-table/edit/master/packages/blog/',
         },
         theme: {
-          customCss: [
-            require.resolve('./src/css/custom.scss'),
-            require.resolve('./src/css/fusion.css'),
-          ],
+          customCss: [require.resolve('./src/css/custom.scss'), require.resolve('./src/css/fusion.css')],
         },
       },
     ],

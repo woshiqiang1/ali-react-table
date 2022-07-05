@@ -159,6 +159,7 @@ export const StyledArtTableWrapper = styled.div`
   font-size: var(--font-size);
   line-height: var(--line-height);
   position: relative;
+  overflow-anchor: none;
 
   // 表格外边框由 art-table-wrapper 提供，而不是由单元格提供
   &.use-outer-border {
@@ -166,6 +167,10 @@ export const StyledArtTableWrapper = styled.div`
   }
 
   .no-scrollbar {
+    // firefox 中移除滚动条
+    scrollbar-width: none;
+
+    // 其他浏览器中移除滚动条
     ::-webkit-scrollbar {
       display: none;
     }
